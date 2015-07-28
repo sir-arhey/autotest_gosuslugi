@@ -1,0 +1,14 @@
+<qa:environment xmlns:qa="urn:model.commons.qatools.yandex.ru">
+    <id>%s</id>
+    <name>Environment test</name>
+    <parameter>
+        <name>Browser</name>
+        <key>Browsers</key>
+        <value>%s</value>
+    </parameter>
+	<parameter>
+        <name>OS</name>
+        <key>OS</key>
+        <value>%s</value>
+    </parameter>
+</qa:environment>

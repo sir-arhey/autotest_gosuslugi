@@ -1,0 +1,17 @@
+@After
+public void exit(){
+if(f){
+            TestClass.exit();
+        }
+}
+
+@AfterClass
+    public static void exit1() throws IOException {
+       if (new File("environment.xml").exists()) {
+            new File("target/allure-results").mkdirs();
+            Files.copy(Paths.get("environment.xml"), Paths.get("target/allure-results/environment.xml"), new CopyOption[]{
+                StandardCopyOption.REPLACE_EXISTING,
+                StandardCopyOption.COPY_ATTRIBUTES
+            });
+        }
+    }
