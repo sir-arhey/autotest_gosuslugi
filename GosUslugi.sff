@@ -1,0 +1,46 @@
+<tests name="GosUslugi.sff">
+  <variables>
+    <variable name="variable1" method="random_once">value</variable>
+    <variable name="variable2" method="random_once(text)">value</variable>
+    <variable name="variable3" method="random_always">value</variable>
+    <variable name="variable4" method="random_always(text)">value</variable>
+  </variables>
+  <test name="Проверка открытия главной формы" screen_error="true" close_browser="true">
+    <browsers wait="5">
+    </browsers>
+    <test-cases>
+    </test-cases>
+  </test>
+  <test name="Переключение по языковым версиям" screen_error="true" close_browser="true">
+    <browsers wait="5">
+    </browsers>
+    <test-cases>
+    </test-cases>
+  </test>
+  <test name="Проверка версии для слабовидящих" screen_error="true" close_browser="true">
+    <browsers wait="5">
+      <browser name="firefox" width="0" height="0" />
+    </browsers>
+    <test-cases>
+      <ref-case namespace="config/namespaces/GosUslugi" object="MainPage" name="OpenMainPage" />
+      <ref-element action="search" value="" namespace="config/namespaces/GosUslugi" object="MainPage" name="Location">Найти элемент "Подтвердить местоположение"</ref-element>
+      <test-case action="click" method="xpath" params="//a[@name='currentAction']" value="">Подтверждение определения местоположения</test-case>
+      <test-case action="search" method="id" params="special-version-link" value="">Найти элемент "Версия для слабовидящих"</test-case>
+      <test-case action="click" method="id" params="special-version-link" value="">Перейти на старицу "Версия для слабовидящих"</test-case>
+      <test-case action="pause" method=" " params="" value="1000">Пауза 1 с</test-case>
+      <test-case action="compare" method="xpath" params="//div[@class='content']/h1" value="Электронные услуги, доступные в версии для слабовидящих">Проверка, что открылась версия для слабовидящих</test-case>
+    </test-cases>
+  </test>
+  <test name="Переход в личный кабинет" screen_error="true" close_browser="true">
+    <browsers wait="5">
+    </browsers>
+    <test-cases>
+    </test-cases>
+  </test>
+  <test name="Переключение изображений на главной форме" screen_error="true" close_browser="true">
+    <browsers wait="5">
+    </browsers>
+    <test-cases>
+    </test-cases>
+  </test>
+</tests>
