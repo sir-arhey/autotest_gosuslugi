@@ -1,8 +1,0 @@
-<object name="MainPage">
-  <test-cases>
-    <test-case name="OpenMainPage" method=" " params="" action="go" value="https://www.gosuslugi.ru">Перейти на сайт ГосУслуги</test-case>
-  </test-cases>
-  <elements>
-    <element name="Location" method="xpath" params="//a[@name='currentAction']" />
-  </elements>
-</object>

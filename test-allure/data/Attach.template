@@ -1,4 +1,0 @@
-@Attachment
-public String Attach() {
-return TestClass.returnError();
-}

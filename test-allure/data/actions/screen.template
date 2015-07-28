@@ -1,3 +1,0 @@
-true;if(Screen%s()==null){
-    flag=false;
-}

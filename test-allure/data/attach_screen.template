@@ -1,4 +1,0 @@
-@Attachment(value = "%s", type = "image/png")
-public byte[] Screen%s() throws IOException {
-return TestClass.screenAllure();
-}
