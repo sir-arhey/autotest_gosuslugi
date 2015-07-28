@@ -1,0 +1,14 @@
+<qa:environment xmlns:qa="urn:model.commons.qatools.yandex.ru">
+    <id>57cbe65f-49b4-45bb-8cb3-93be9c556b0d</id>
+    <name>Environment test</name>
+    <parameter>
+        <name>Browser</name>
+        <key>Browsers</key>
+        <value>firefox</value>
+    </parameter>
+	<parameter>
+        <name>OS</name>
+        <key>OS</key>
+        <value>Windows 8 64bit</value>
+    </parameter>
+</qa:environment>
